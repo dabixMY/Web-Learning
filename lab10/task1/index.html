@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Picture Gallery</title>
+    <style>
+        /* Arrange the images in five equal-width columns. */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        /* Set the size and appearance of each gallery image. */
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            filter: drop-shadow(2px 2px 5px black);
+            filter: sepia(50%);
+            filter: blur(1px);
+            transition: opacity 0.5s ease;
+        }
+
+        /* Highlight an image when the pointer is over it. */
+        .gallery img:hover {
+            opacity: 1;
+            filter: drop-shadow(4px 4px 10px black);
+        }
+    </style>
+</head>
+
+<body onload="loadImages()">
+    <!-- Page heading and container for images loaded from the server. -->
+    <h1>Picture Gallery</h1>
+    <div id="gallery" class="gallery">
+        Loading images...
+    </div>
+</body>
+
+</html>
+
+<script>
+    // Load the gallery images asynchronously from the PHP endpoint.
+    function loadImages() {
+        // Create and configure an HTTP request.
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "get_images.php", true);
+        ajax.send();
+
+        // Insert the response once the request completes successfully.
+        ajax.onreadystatechange = function () {
+            if (ajax.readyState == 4 && ajax.status == 200) {
+                // Replace the loading message with the returned image markup.
+                document.getElementById("gallery").innerHTML = ajax.responseText;
+            }
+        };
+    }
+</script>

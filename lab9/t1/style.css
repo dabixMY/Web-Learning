@@ -1,0 +1,51 @@
+table {
+			border-collapse: collapse;
+			width: 100%;
+			max-width: 800px;
+			margin: 0 auto;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			line-height: 1.4;
+			color: #333;
+}
+th, td {
+			border: 1px solid #ccc;
+			padding: 8px;
+			text-align: left;
+}
+th {
+			background-color: #f2f2f2;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+}
+tr:nth-child(even) {
+			background-color: #f9f9f9;
+}
+		
+body {
+	margin: 8px;
+	padding: 8px;
+}
+
+/* Centralize the container for the buttons */
+.button-container {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+/* Style the buttons */
+.button-container button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 10px 20px; /* Some padding */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Pointer/hand icon on hover */
+    border-radius: 8px; /* Rounded corners */
+    margin: 0 10px; /* Space between buttons */
+}
+
+.button-container button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
