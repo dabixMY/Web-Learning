@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    background: #2b2b2b;
+    color: #fff;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 12px 0;
+    font-size: 28px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 30px 40px;
+    min-height: 300px;
+}
+
+/* Homepage */
+.intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+    color: #555;
+    line-height: 1.5;
+}
+
+.promo-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Forms (Account / Courses / Profile lookup) */
+h2 {
+    margin-top: 0;
+}
+
+form {
+    background: #fff;
+    padding: 25px 30px;
+    max-width: 500px;
+    border: 1px solid #e0e0e0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.btn-green {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    margin-top: 22px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-green:hover {
+    background: #43a047;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 13px;
+    display: block;
+    margin-top: 4px;
+}
+
+.notice {
+    text-align: center;
+    color: #d32f2f;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Courses page */
+.course-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+}
+
+.course-label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin: 0;
+}
+
+.course-label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.course-desc {
+    color: #888;
+    font-style: italic;
+    font-size: 13px;
+    margin: 4px 0 0 24px;
+}
+
+/* Profile table */
+p strong {
+    display: inline-block;
+    min-width: 90px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #fff;
+}
+
+th {
+    background: #4a4a42;
+    color: #fff;
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 13px;
+}
+
+td {
+    background: #d9cfba;
+    padding: 10px 12px;
+    font-size: 13px;
+    border-bottom: 2px solid #fff;
+    vertical-align: top;
+}

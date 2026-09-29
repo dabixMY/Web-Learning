@@ -1,0 +1,1 @@
+Welcome to the UTAR Study Plan Management System! This platform helps students easily register, select courses, and manage their study plans for the current semester. With a user-friendly interface, you can track the courses you are enrolled in and keep your academic journey on track.
